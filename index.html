@@ -558,46 +558,70 @@
     <section id="programs">
         <h2>Program Studi</h2>
         <div class="programs">
+
+            <a href="https://sisfo.untan.ac.id/" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop" alt="Sistem Informasi">
                 <h3>💻 Sistem Informasi</h3>
                 <p>Menggabungkan teknologi informasi dengan manajemen bisnis. Menghasilkan lulusan yang mampu merancang dan mengelola solusi sistem informasi perusahaan.</p>
             </div>
+            </a>
+
+            <a href="https://mipa.untan.ac.id/program-studi/sarjana/rekayasa-sistem-komputer" target="_blank" style="text-decoration: none; color: inherit;">            
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="Sistem Komputer">
                 <h3>🖥️ Sistem Komputer</h3>
                 <p>Fokus pada infrastruktur IT, arsitektur komputer, jaringan, dan keamanan sistem. Membentuk ahli dalam pengelolaan dan pengembangan teknologi komputer.</p>
             </div>
+            </a>
+
+            <a href="https://mipa.untan.ac.id/program-studi/sarjana/matematika" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=250&fit=crop" alt="Matematika">
                 <h3>➗ Matematika</h3>
                 <p>Mempelajari teori matematika murni dan terapan, analisis, aljabar, serta pemodelan matematika. Menghasilkan lulusan yang mahir dalam pemecahan masalah matematis.</p>
             </div>
+            </a>
+            
+            <a href="https://fisika.fmipa-untan.id/en" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=400&h=250&fit=crop" alt="Fisika">
                 <h3>⚛️ Fisika</h3>
                 <p>Mengkaji fenomena alam, energi, materi, dan hukum-hukum fisika. Mempersiapkan ahli dalam riset fisika dan aplikasi teknologi berbasis fisika.</p>
             </div>
+            </a>
+
+            <a href="https://mipa.untan.ac.id/program-studi/sarjana/kimia" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=250&fit=crop" alt="Kimia">
                 <h3>🧪 Kimia</h3>
                 <p>Mempelajari struktur, sifat, dan reaksi materi. Menghasilkan lulusan yang kompeten dalam analisis kimia, sintesis, dan penelitian material.</p>
             </div>
+            </a>
+
+            <a href="https://mipa.untan.ac.id/program-studi/sarjana/biologi" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=400&h=250&fit=crop" alt="Biologi">
                 <h3>🧬 Biologi</h3>
                 <p>Fokus pada kehidupan organisme, ekologi, genetika, dan keanekaragaman hayati. Mempersiapkan ahli biologi untuk riset dan konservasi lingkungan.</p>
             </div>
+
+
+            <a href="https://mipa.untan.ac.id/program-studi/sarjana/statistika" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Statistika">
                 <h3>📊 Statistika</h3>
                 <p>Mempelajari pengumpulan, analisis, dan interpretasi data. Menghasilkan lulusan yang ahli dalam data science, survei, dan pengambilan keputusan berbasis data.</p>
             </div>
+            </a>
+
+            <a href="https://mipa.untan.ac.id/program-studi/sarjana/ilmu-kelautan" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
                 <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop" alt="Ilmu Kelautan">
                 <h3>🌊 Ilmu Kelautan</h3>
                 <p>Mengkaji ekosistem laut, oseanografi, dan sumber daya kelautan. Mempersiapkan ahli dalam pengelolaan dan konservasi lingkungan maritim.</p>
             </div>
+            </a>
 
             <a href="https://geofisika.fmipa-untan.id/en#" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="program-card">
@@ -775,9 +799,10 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.program-card, .news-card, .gallery-item').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll(
+            '.program-card, .news-card, .gallery-item, .about-text, .stat-card'
+        ).forEach(item => observer.observe(item));
     </script>
+
 </body>
 </html>
